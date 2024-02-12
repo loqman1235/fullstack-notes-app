@@ -45,7 +45,7 @@ const HomePage = () => {
           ? Array.from({ length: 8 }).map((_, index) => (
               <SkeletonNote key={index} />
             ))
-          : notes?.map((note) => <NoteCard key={note.id} {...note} />)}
+          : notes?.map((note) => <NoteCard key={note._id} {...note} />)}
       </div>
       <Footer />
     </>
